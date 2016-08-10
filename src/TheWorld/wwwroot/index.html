@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="sidebar">
-        <img src="img/profileimage.jpg" alt="headshot" class="headshot"/>
-        <span>Shane Devenney</span>
+        <img src="img/profileimage.jpg" alt="headshot" class="headshot" />
+        <span id="username">Shane Devenney</span>
         <ul class="menu">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -18,26 +18,31 @@
     </div>
     <div id="wrapper">
         <div id="main">
-            <h1>The World</h1>
-            <p>This will be a fun website soon!</p>
+            <div>
+                <button id="sidebarToggle" >Toggle Menu</button> 
+            </div>
+                <h1>The World</h1>
+                <p>This will be a fun website soon!</p>
 
-            <form>
-                <div>
-                    <label>Date</label>
-                    <input />
-                </div>
-                <div>
-                    <label>Location</label>
-                    <input />
-                </div>
-                <div>
-                    <input type="submit" value="Add" />
-                </div>
-            </form>         
+                <form>
+                    <div>
+                        <label>Date</label>
+                        <input />
+                    </div>
+                    <div>
+                        <label>Location</label>
+                        <input />
+                    </div>
+                    <div>
+                        <input type="submit" value="Add" />
+                    </div>
+                </form>
+            </div>
+            <div id="footer">
+                &copy; 2016 Shane Devenney
+            </div>
         </div>
-        <div id="footer">
-            &copy; 2016 Shane Devenney
-        </div>
-    </div>
+        <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
